@@ -1,4 +1,3 @@
-
 import tkinter as tk
 from tkinter import ttk
 
@@ -12,6 +11,12 @@ class Calculator:
         self.display.grid(row=0, columnspan=4, sticky="SNEW")
 
         self.create_buttons()
+
+    def create_buttons(self):
+        buttons = ['7', '8', '9', '+',
+                   '4', '5', '6', '-',
+                   '1', '2', '3', '*',
+                   '0', '.', '=', '/']
 
     def create_buttons(self):
         buttons = ['7', '8', '9', '+',
